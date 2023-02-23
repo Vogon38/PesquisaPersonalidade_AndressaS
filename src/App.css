@@ -1,0 +1,7 @@
+p {
+  white-space: break-spaces;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
