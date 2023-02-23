@@ -30,7 +30,7 @@ export const surveyJson = {
     }]
   }, {
     elements: [{
-      name: "Tradiocinal",
+      name: "Tradicional",
       title: "Selecione:",
       type: "checkbox",
       choices: [
