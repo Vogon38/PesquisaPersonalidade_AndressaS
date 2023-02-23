@@ -38,7 +38,7 @@ function App() {
         const count = choices.length;
         return {
           name: name,
-          label: `${name} (${count})`,
+          label: `${name}`,
           data: [count, totalChoices],
           backgroundColor: chartColors[index % chartColors.length],
           borderColor: chartColors[index % chartColors.length],
