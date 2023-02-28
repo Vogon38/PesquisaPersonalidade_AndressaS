@@ -113,21 +113,35 @@ function App() {
       const height = pdf.internal.pageSize.getHeight();
   
       // Add header
-      pdf.setFontSize(16);
-      pdf.text("Resultado - Pesquisa de Personalidade", width / 2, 60, { align: "center" });
+      pdf.setFontSize(26);
+      pdf.setTextColor("#2b2d42");
+      pdf.setFont("helvetica", "bold")
+      pdf.text("Resultado da Pesquisa de Personalidade", width / 2, 60, { align: "center" });
   
       // Add footer
-      const footerY = pdf.internal.pageSize.getHeight() - 10;
+      const footerY = pdf.internal.pageSize.getHeight() - 20;
+      pdf.setFontSize(10);
+      pdf.setTextColor("#777");
       const footerText = `Copyright © ${currentYear} - Andressa Sevegnani`;
-      pdf.text(footerText, 40, footerY);
+      pdf.text(footerText, 40, footerY, { align: "left" });
+      pdf.text("1", width - 40, footerY, { align: "right" });
   
-      // Add chart image
-      pdf.addImage(imgData, 'PNG', 40, 80, width - 80, height - 190);
+      // Calculate the new width and height
+      const scaleFactor = 0.8;
+      const newWidth = (width - 80) * scaleFactor;
+      const newHeight = (height - 190) * scaleFactor;
+  
+      // Calculate the new x-coordinate and y-coordinate
+      const x = (width - newWidth) / 2;
+      const y = (height - newHeight) / 2;
+  
+      // Add the chart image with the new width, height, x-coordinate, and y-coordinate
+      pdf.addImage(imgData, 'PNG', x, y, newWidth, newHeight);
   
       // Download PDF
       pdf.save('pesquisa_de_personalidade.pdf');
     });
-  };   
+  };  
   
   return (
     <div className="App">

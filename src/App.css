@@ -20,12 +20,13 @@ p {
   padding-left: 25px;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 7px;
 }
 
 .button-container button {
-  background-color: #000000;
-  color: white;
-  border: none;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #000000;
   text-align: center;
   text-decoration: none;
   display: inline-block;
