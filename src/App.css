@@ -5,3 +5,47 @@ p {
 .pre-line {
   white-space: pre-line;
 }
+
+#survey-results-chart {
+  height: 300px;
+}
+
+.chart-container {
+  height: 500px; /* Or any other fixed height you prefer */
+  position: relative;
+}
+
+.button-container {
+  display: flex;
+  padding-left: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sd-container-modern {
+  margin-bottom: 0 !important;
+  }
+
+.sd-completedpage {
+  height: 100px;
+}
+
+.sd-completedpage:before {
+  height: calc(5 * var(--base-unit, 8px));
+}
+
+.sd-completedpage:after {
+  height: calc(5 * var(--base-unit, 8px));
+}

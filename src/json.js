@@ -2,7 +2,7 @@ export const surveyJson = {
   pages: [{
     elements: [{
       type: "html",
-      html: "<h2>Teste de Personalidade.<br> Aponte as palavras que mais combinam com você!</h2>"
+      html: "<h2>Teste de Personalidade."
     }]
   }, {
     elements: [{

@@ -22,3 +22,12 @@ code {
 .sd-imagepicker span {
   margin-bottom: 10px;
 }
+
+#survey-results-chart {
+  height: 300px;
+}
+
+.chart-container {
+  height: 500px; /* Or any other fixed height you prefer */
+  position: relative;
+}
