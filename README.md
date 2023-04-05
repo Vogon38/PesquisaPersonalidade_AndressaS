@@ -1,9 +1,8 @@
-## Development server
+## Personality Quiz App
 
-Run the app in the development mode:
+This is a React app that implements a personality quiz. The quiz consists of a series of questions, each with multiple possible answers. At the end of the quiz, the user's personality type is displayed based on their answers.
 
 ```cmd
 yarn start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits.
